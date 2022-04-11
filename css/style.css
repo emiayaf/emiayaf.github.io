@@ -7,8 +7,19 @@ body {
   margin: 20px auto;
 }
 
+header {
+  text-align: center;
+  background-color: rgba(56, 102, 65, 0.5);
+  text-shadow: 2px 2px 4px #CCC;
+}
+
+
 h1,
 h2,
 h3 {
   font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+p{
+  max-width: 60ch;
 }
