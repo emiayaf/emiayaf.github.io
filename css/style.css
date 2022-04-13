@@ -3,23 +3,129 @@
 
 body {
   font-family: "Noto Sans", "Helvetica", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+  "header header"
+  "main   main"
+  "footer footer";
+  grid-gap: 16px;
+
   max-width: 960px;
-  margin: 20px auto;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 900;
+  color: #FFF;
+  text-shadow: 2px 2px 4px #333;
+}
+
+h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #555;
+}
+
+header {
+  padding: 16px;
+  grid-area: header;
+  text-align: center;
+  background-color: rgba(255,54,26, 0.85);
+}
+
+main {
+  padding: 16px;
+  grid-area: main;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "introduction         geography"
+  "people-and-society   government";
+  grid-gap: 16px;
+}
+
+footer {
+  padding: 16px;
+  grid-area: footer;
+  text-align: center;
+  background-color: rgba(255,54,26, 0.85);
+  color: #FFF;
+}
+
+footer p {
+  margin: 0;
+}
+
+#introduction {
+  padding: 16px;
+  grid-area: introduction;
+}
+
+#geography {
+  padding: 16px;
+  grid-area: geography;
+}
+
+#people-and-society {
+  padding: 16px;
+  grid-area: people-and-society;
+}
+
+#government {
+  padding: 16px;
+  grid-area: government;
+}
+
+a,
+a:link {
+  color: #FFF;
+}
+
+a:visited {
+  color: rgb(0, 169, 255);
+}
+
+a:hover {
+  color: rgb(0, 210, 8);
+}
+
+a:active {
+  color: rgb(252, 255, 2);
+}
+
+  /*margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-gap: 18px;
 }
 
 header {
   text-align: center;
   background-color: rgba(56, 102, 65, 0.5);
   text-shadow: 2px 2px 4px #CCC;
+  grid-column: 1/-1;
 }
+
+main {
+  background-color: rgba(242, 232, 207, 0.5)
+  }
+
+  #geography {
+    grid-column: 2/-1;
+  }
+}
+
 
 
 h1,
 h2,
 h3 {
   font-family: "Roboto Slab", "Times New Roman", serif;
-}
-
-p{
-  max-width: 60ch;
 }
