@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
 
 body {
-  font-family: "Tajawal", "Helvetica", "Arial", sans-serif; 
+  font-family: "Tajawal", "Helvetica", "Arial", sans-serif;
+  line-height: 1.25;
+  font-size: 20px;
+
+  max-width: 960px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  width 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
