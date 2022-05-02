@@ -31,6 +31,7 @@ header{
 nav {
   grid-area: nav;
   position: sticky;
+  background-color: #FFF;
   top: 0;
 }
 nav ul {
