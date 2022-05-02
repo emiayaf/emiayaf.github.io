@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Roboto+Slab&display=swap');
+
+body {
+  font-family: "Noto Sans", "Helvetica", "Arial", sans-serif;
+  line-height: 1.25;
+  font-size: 16px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "header header"
+  "nav    nav"
+  "main   main"
+  "footer footer";
+  grid-gap: 16px;
+
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 900;
+  color: #FFF;
+  text-shadow: 2px 2px 4px #333;
+}
+
+h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #555;
+}
+
+header {
+  padding: 16px;
+  grid-area: header;
+  text-align: center;
+  background-color: rgba(0,166,166, 0.85);
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(240,135,0);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  width 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "introduction         geography"
+  "people-and-society   government";
+  grid-gap: 16px;
+}
+
+footer {
+  padding: 16px;
+  grid-area: footer;
+  text-align: center;
+  background-color: rgba(0,166,166, 0.85);
+  color: #FFF;
+}
+
+footer p {
+  margin: 0;
+}
+
+#introduction {
+  padding: 16px;
+  grid-area: introduction;
+  background-color: rgba(244,159,10,0.2);
+}
+
+#geography {
+  padding: 16px;
+  grid-area: geography;
+  background-color: rgba(244,159,10,0.2);
+}
+
+#people-and-society {
+  padding: 16px;
+  grid-area: people-and-society;
+  background-color: rgba(244,159,10,0.2);
+}
+
+#government {
+  padding: 16px;
+  grid-area: government;
+  background-color: rgba(244,159,10,0.2);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  font-size: 8px;
+  font-style: italic;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  padding: 8px;
+}
+
+a,
+a:link {
+  color: #FFF;
+}
+
+a:visited {
+  color: rgb(187,222,240);
+}
+
+a:hover {
+  color: rgb(239,202,8);
+}
+
+a:active {
+  color: rgb(50,205,50);
+}
