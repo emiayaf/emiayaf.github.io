@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Noto+Sans:wght@300&family=Roboto+Slab&display=swap');
 
 body {
   font-family: "Tajawal", "Helvetica", "Arial", sans-serif;
@@ -14,6 +15,7 @@ body {
   "header header"
   "nav    nav"
   "main   main"
+  "footer footer"
 }
 
 h1,
@@ -25,13 +27,14 @@ h3 {
 h1 {
   font-size: 50px;
   font-weight: 900;
+  padding: 20px;
 }
 
 header{
+  padding: 20px;
   grid-area: header;
   text-align: center;
-  margin: auto;
-  padding: 20px;
+  background-color: rgb(219,224,217);
 }
 
 nav {
@@ -40,6 +43,7 @@ nav {
   background-color: #FFF;
   top: 0;
 }
+
 nav ul {
   width 100%;
   list-style-type: none;
@@ -51,9 +55,75 @@ nav ul {
 
 main {
   grid-area: main;
+  margin: 0;
 }
 
 #mission {
   grid-column: 1/-1;
   margin
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  grid-template-areas:
+  "picture quotes"
+  "mission mission"
+}
+
+#quotes {
+  grid-area: quotes;
+  padding: 20px;
+  display: block;
+  margin: auto;
+  font-family: "Libre Bodoni","Times New Roman",serif;
+  font-style: italic;
+  font-size: 40px;
+  border-top: solid;
+  border-bottom: solid;
+}
+
+#mission {
+  grid-area: mission;
+  padding: 20px;
+}
+
+#about {
+  padding: 20px;
+  display: grid;
+  grid-column: 1fr 1fr;
+  grid-template-areas:
+  "headshot bio";
+}
+
+#bio {
+  grid-area: bio;
+  padding: 20px;
+}
+
+#headshot {
+  grid-area: headshot;
+}
+
+a,
+a:link {
+  color: #222;
+}
+
+a:visited {
+  color: rgb(163,0,68);
+}
+
+a:hover {
+  color: rgb(239,202,8);
+}
+
+a:active {
+  color: rgb(50,205,50);
 }
