@@ -22,6 +22,8 @@ h1,
 h2,
 h3 {
   margin: 0;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 h1 {
@@ -40,7 +42,7 @@ header{
 nav {
   grid-area: nav;
   position: sticky;
-  background-color: #FFF;
+  background-color: rgb(252,246,231);
   top: 0;
 }
 
@@ -66,6 +68,11 @@ main {
 footer {
   grid-area: footer;
   text-align: center;
+}
+
+figcaption {
+  font-size: 15px;
+  font-style: italic;
 }
 
 #home {
@@ -97,7 +104,7 @@ footer {
 #about {
   padding: 20px;
   display: grid;
-  grid-column: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "headshot bio";
 }
@@ -109,6 +116,43 @@ footer {
 
 #headshot {
   grid-area: headshot;
+}
+
+#videos {
+  display: grid;
+  grid-row-gap: 50px;
+  padding: 20px;
+  grid-template-areas:
+  "valeria deh-vieni"
+  "chevaux sul-fil"
+}
+
+#valeria {
+  grid-area: valeria;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#deh-vieni {
+  grid-area: deh-vieni;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chevaux {
+  grid-area: chevaux;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sul-fil {
+  grid-area: sul-fil;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a,
