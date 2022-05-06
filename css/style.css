@@ -54,6 +54,7 @@ nav ul {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
+  font-weight: 900;
 }
 
 main {
@@ -213,13 +214,13 @@ a:link {
 }
 
 a:visited {
-  color: rgb(0,67,124);
+  color: rgb(83,0,47);
 }
 
 a:hover {
-  color: rgb(178,119,211);
+  color: rgb(30,90,60);
 }
 
 a:active {
-  color: rgb(255,71,154);
+    color: rgb(0,67,124);
 }
