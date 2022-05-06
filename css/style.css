@@ -36,13 +36,13 @@ header{
   padding: 20px;
   grid-area: header;
   text-align: center;
-  background-color: rgb(219,224,217);
+  background-color: rgb(203,211,166);
 }
 
 nav {
   grid-area: nav;
   position: sticky;
-  background-color: rgb(252,246,231);
+  background-color: rgb(250,240,211);
   top: 0;
 }
 
@@ -60,9 +60,15 @@ main {
   margin: 0;
 }
 
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #mission {
   grid-column: 1/-1;
-  margin
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 footer {
@@ -161,13 +167,13 @@ a:link {
 }
 
 a:visited {
-  color: rgb(163,0,68);
+  color: rgb(0,67,124);
 }
 
 a:hover {
-  color: rgb(239,202,8);
+  color: rgb(178,119,211);
 }
 
 a:active {
-  color: rgb(50,205,50);
+  color: rgb(255,71,154);
 }
