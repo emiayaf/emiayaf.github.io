@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Myeongjo&family=Plus+Jakarta+Sans:wght@200;300&family=Tajawal:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Noto+Sans:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Tajawal:wght@300&display=swap');
 
 body {
-  font-family: "Tajawal", "Helvetica", "Arial", sans-serif;
+  font-family: "Nanum Myeongjo", "Helvetica", "Arial", sans-serif;
   line-height: 1.25;
   font-size: 20px;
 
@@ -27,6 +28,7 @@ h3 {
 }
 
 h1 {
+  font-family: "Abril Fatface", "Times New Roman", serif;
   font-size: 50px;
   font-weight: 900;
   padding: 20px;
@@ -36,12 +38,11 @@ header{
   padding: 20px;
   grid-area: header;
   text-align: center;
-  background-color: rgb(203,211,166);
+  background-color: rgba(99,149,58,0.5);
 }
 
 nav {
   grid-area: nav;
-  position: sticky;
   background-color: rgb(250,240,211);
   top: 0;
 }
@@ -100,6 +101,10 @@ figcaption {
   font-size: 40px;
   border-top: solid;
   border-bottom: solid;
+}
+
+#review {
+  font-size: 25px;
 }
 
 #mission {
