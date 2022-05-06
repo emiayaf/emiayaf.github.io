@@ -30,7 +30,7 @@ h3 {
 h1 {
   font-family: "Abril Fatface", "Times New Roman", serif;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 700px;
   padding: 20px;
 }
 
@@ -109,7 +109,6 @@ figcaption {
 
 #mission {
   grid-area: mission;
-  padding: 20px;
 }
 
 #about {
@@ -132,7 +131,7 @@ figcaption {
 #videos {
   display: grid;
   grid-row-gap: 50px;
-  padding: 20px;
+  padding-top: 20px;
   grid-template-areas:
   "valeria deh-vieni"
   "chevaux sul-fil"
