@@ -176,35 +176,6 @@ figcaption {
   grid-gap: 20px;
 }
 
-/*  grid-template-areas:
-  "recital-2 bridge-2       scrapbookers-1"
-  "mahler-1  scrapbookers-2 bridge-1";
-}
-
-#recital-2 {
-  grid-area: recital-2;
-}
-
-#bridge-2 {
-  grid-area: bridge-2;
-}
-
-#scrapbookers-1 {
-  grid-area: scrapbookers-1;
-}
-
-#mahler-1 {
-  grid-area: mahler-1;
-}
-
-#scrapbookers-2 {
-  grid-area: scrapbookers-2;
-}
-
-#bridge-1 {
-  grid-area: bridge-1;
-}*/
-
 img {
   display: block;
   margin-left: auto;
