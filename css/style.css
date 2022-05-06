@@ -43,7 +43,7 @@ header{
 
 nav {
   grid-area: nav;
-  background-color: rgb(250,240,211);
+  background-color: rgba(250,240,211,0.75);
   top: 0;
 }
 
